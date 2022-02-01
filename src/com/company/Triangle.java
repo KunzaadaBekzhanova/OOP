@@ -3,8 +3,9 @@ package com.company;
 public class Triangle {
     int a;
     int b;
-    int h;
+    int c;
     public void area(){
-        System.out.println((b*h)/2);
+        double s = (a+b+c)/2;
+        System.out.println((int)Math.sqrt(s*(s-a)*(s-b)*(s-c)));
     }
 }

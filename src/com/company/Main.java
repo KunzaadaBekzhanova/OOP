@@ -4,9 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 	Triangle triangle = new Triangle();
-    triangle.a = 5;
-    triangle.b = 4;
-    triangle.h = 10;
+    triangle.a = 9;
+    triangle.b = 13;
+    triangle.c = 18;
     triangle.area();
     }
 }
