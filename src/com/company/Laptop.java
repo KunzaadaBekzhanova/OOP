@@ -6,6 +6,13 @@ public class Laptop {
     private String color;
     private String CPU;
 
+    public void showInfo(){
+        System.out.println("laptopName = " + laptopName);
+        System.out.println("memory = " + memory);
+        System.out.println("color = " + color);
+        System.out.println("CPU = " + CPU);
+    }
+
     public String getLaptopName() {
         return laptopName;
     }

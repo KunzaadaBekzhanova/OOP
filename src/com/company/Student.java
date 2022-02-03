@@ -1,24 +1,26 @@
 package com.company;
 
 public class Student {
-    private String nameStudent;
-    private String surNAme;
+    private String Student;
+    private String SurnameOfstudent;
     private int age;
+    private String group;
+    private Laptop laptop;
 
-    public String getNameStudent() {
-        return nameStudent;
+    public String getStudent() {
+        return Student;
     }
 
-    public void setNameStudent(String nameStudent) {
-        this.nameStudent = nameStudent;
+    public void setStudent(String student) {
+        Student = student;
     }
 
-    public String getSurNAme() {
-        return surNAme;
+    public String getSurnameOfstudent() {
+        return SurnameOfstudent;
     }
 
-    public void setSurNAme(String surNAme) {
-        this.surNAme = surNAme;
+    public void setSurnameOfstudent(String surnameOfstudent) {
+        SurnameOfstudent = surnameOfstudent;
     }
 
     public int getAge() {
@@ -26,19 +28,38 @@ public class Student {
     }
 
     public void setAge(int age) {
-        if(age > 0) {
-            this.age = age;
-            System.out.println("Age is not negative");
-        }
+        this.age = age;
     }
 
-    public int getBirthDate() {
-        return birthDate;
+    public String getGroup() {
+        return group;
     }
 
-    public void setBirthDate(int birthDate) {
-        this.birthDate = birthDate;
+    public void setGroup(String group) {
+        this.group = group;
     }
 
-    private int birthDate;
+    public void coffee(){
+        System.out.println("Student is drinking coffee");
+    }
+    public void food(){
+        System.out.println("Student id eating");
+    }
+    public void showInformation(){
+        System.out.println("info");
+        System.out.println("name = " + Student);
+        System.out.println("Surname = " + SurnameOfstudent);
+        System.out.println("age = " + age);
+        System.out.println("group = " + group);
+        coffee();
+        food();
+    }
+
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
 }
